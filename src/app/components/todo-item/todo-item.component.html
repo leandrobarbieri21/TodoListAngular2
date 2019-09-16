@@ -1,0 +1,11 @@
+<div class="todo">
+  <p>
+    <input (change)="onToggle(todo)" type="checkbox" [(ngModel)]="todo.completed" />
+    <input [ngClass]="setClasses()" type="text" [(ngModel)]="todo.title" [disabled]="todo.completed"
+    (focus)="editTodo(todo)"
+    (blur)="doneEdit(todo)"
+    (keyup.enter)="doneEdit(todo)"
+    (keyup.esc)="cancelEdit(todo)">
+    <button (click)="onDelete(todo)" class="del">x</button>
+  </p>
+</div>

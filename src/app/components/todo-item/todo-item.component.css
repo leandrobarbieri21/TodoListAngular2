@@ -1,0 +1,40 @@
+button.del {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.todo {
+  background: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px #ccc dotted;
+}
+
+.todo input {
+  font-size: 16px;
+}
+
+.todo-item {
+  border: 0;
+  padding: 10px;
+  margin-left: 10px;
+  width: calc(100% - 60px);
+  outline: none;
+  background: #f4f4f4;
+  color: #000;
+}
+
+.todo-item.is-completed {
+  text-decoration: line-through;
+}
+
+.todo-item.editable {
+	background: #fff;
+}
